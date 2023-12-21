@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  padding: 0 20px; /* Add padding to the navbar */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reduce the gap between menu items */
+  margin-left: auto; /* Push the nav-menu to the right */
+}
+
+.nav-branding {
+  font-size: 1.5rem;
+  margin-right: 15px; /* Adjust the margin for branding */
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: #4caf4f;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-logo {
+  font-size: 24px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.register-btn a {
+  background-color: #4caf4f;
+  color: white;
+  padding: 8px 20px; /* Adjust the padding for the button */
+  border-radius: 3px;
+}
+
+.register-btn a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none; /* Hide the nav-menu by default on small screens */
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show the nav-menu when active */
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+}

@@ -1,2 +1,4 @@
 # nexcent-landing
-Developing a landing page from a Sigma template designed by Muntasir Billah.
+Developing a landing page from a Figma template designed by Muntasir Billah.
+
+https://jdanderson01.github.io/nexcent-landing/

@@ -113,6 +113,34 @@ li {
   padding-top: 2rem;
 }
 
+.client-content,
+.community-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 2.5rem;
+}
+
+.client-text,
+.community-text {
+  text-align: center;
+}
+
+.client-subtext,
+.community-subtext {
+  margin-top: 0.9rem;
+  color: grey;
+}
+
+.client-text img {
+  margin: 3.5rem;
+}
+
+.community-text img {
+  margin: 1.9rem 8.5rem 8.5rem; /* Adjust the top margin of the icons */
+}
+
 @media (min-width: 769px) and (max-width: 828px) {
   .nav-item.register-btn {
     color: blue;

@@ -113,13 +113,18 @@ li {
   padding-top: 2rem;
 }
 
-.client-content,
-.community-content {
+.client-content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   margin-top: 2.5rem;
+}
+
+.community-content {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center;
 }
 
 .client-text,
@@ -138,7 +143,67 @@ li {
 }
 
 .community-text img {
-  margin: 1.9rem 8.5rem 8.5rem; /* Adjust the top margin of the icons */
+  margin: 1.9rem 0rem 0.3rem; /* Adjust the top margin of the icons */
+}
+
+.community-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adjust the gap between community items */
+  flex-wrap: wrap; /* Allow items to wrap onto the next row */
+}
+
+.community-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 18.688rem;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 1rem 1rem;
+}
+
+.community-item-subhead {
+  font-size: 1.2rem;
+  margin: 0.9rem 0.9rem;
+}
+
+.community-item-text {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+}
+
+.unlock-content {
+  display: flex;
+  align-items: center;
+}
+
+.unlock-text {
+  flex: 1;
+  padding: 0 1.5rem; /* Add padding as needed */
+}
+
+.unlock-heading {
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.unlock-subtext {
+  color: grey;
+  margin-top: 0.7rem;
+}
+
+.learn-btn {
+  margin-top: 1rem;
+}
+
+.learn-btn a {
+  background-color: #4caf4f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 @media (min-width: 769px) and (max-width: 828px) {
@@ -196,5 +261,10 @@ li {
 
   .hero-btn {
     padding-top: 1.5rem;
+  }
+
+  .community-items {
+    flex-direction: column;
+    align-items: center;
   }
 }

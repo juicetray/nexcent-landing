@@ -73,7 +73,8 @@ li {
   color: black;
 }
 
-.hero {
+.hero,
+.achievements {
   background-color: #f5f7fa;
 }
 
@@ -84,7 +85,8 @@ li {
   padding: 1.25rem;
 }
 
-.hero-text {
+.hero-text,
+.achievements-text {
   max-width: 60%;
   margin-left: 9rem;
 }
@@ -94,17 +96,21 @@ li {
   margin-right: 9rem;
 }
 
-.hero-heading {
+.hero-heading,
+.achievements-heading {
+  color: #4d4d4d;
   padding-top: 4.125rem;
   font-weight: 600;
   font-size: 2.75rem;
 }
 
-.hero-color-text {
+.hero-color-text,
+.achievement-color-text {
   color: #4caf4f;
 }
 
-.hero-subtext {
+.hero-subtext,
+.achievements-subtext {
   color: grey;
   padding-top: 0.7rem;
 }
@@ -150,7 +156,6 @@ li {
   display: flex;
   align-items: center;
   gap: 1rem; /* Adjust the gap between community items */
-  flex-wrap: wrap; /* Allow items to wrap onto the next row */
 }
 
 .community-item {

@@ -20,20 +20,18 @@ li {
   align-items: center;
   background-color: #fff;
   margin-top: 0.5rem;
-  padding: 1rem 1rem; /* Add padding to the navbar */
-}
+  padding: 1rem 1rem; 
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 15px; /* Reduce the gap between menu items */
-  margin-left: auto; /* Push the nav-menu to the right */
+  gap: 15px; 
+  margin-left: auto;
 }
 
 .nav-branding {
   font-size: 1.5rem;
-  margin-right: 15px; /* Adjust the margin for branding */
-}
+  margin-right: 15px; 
 
 .nav-link {
   transition: 0.7s ease;
@@ -64,12 +62,13 @@ li {
 .register-btn a {
   background-color: #4caf4f;
   color: white;
-  padding: 0.5rem 1.25rem; /* Adjust the padding for the button */
+  padding: 0.5rem 1.25rem; 
   border-radius: 0.188rem;
   margin-left: auto;
 }
 
-.register-btn a:hover {
+.register-btn,
+.learn-btn a:hover {
   color: black;
 }
 
@@ -129,7 +128,7 @@ li {
 
 .community-content {
   display: flex;
-  flex-direction: column; /* Stack the elements vertically */
+  flex-direction: column;
   align-items: center;
 }
 
@@ -149,13 +148,13 @@ li {
 }
 
 .community-text img {
-  margin: 1.9rem 0rem 0.3rem; /* Adjust the top margin of the icons */
+  margin: 1.9rem 0rem 0.3rem; 
 }
 
 .community-items {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Adjust the gap between community items */
+  gap: 1rem; 
 }
 
 .community-item {
@@ -189,11 +188,11 @@ li {
 
 .unlock-text {
   flex: 1;
-  padding: 0 1.5rem; /* Add padding as needed */
+  padding: 0 1.5rem; 
 }
 
 .unlock-heading {
-  font-size: 1.5rem; /* Adjust font size as needed */
+  font-size: 1.5rem; 
 }
 
 .unlock-subtext {
@@ -220,21 +219,100 @@ li {
   max-width: 41.313rem;
 }
 
-@media (min-width: 769px) and (max-width: 828px) {
+.achievements-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.counts {
+  margin-top: 40px;
+  margin-left: 9rem;
+}
+
+.count-row {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 11rem;
+  gap: 5rem;
+}
+
+.count-row:nth-child(1) {
+  margin-bottom: 2.5rem; 
+}
+
+.count-item {
+  display: flex;
+  align-items: center; 
+}
+
+.count-img {
+  width: 50px; 
+  height: 50px;
+}
+
+.count-label,
+.count-number {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.count-number {
+  font-weight: bold;
+  margin-left: 0.5rem; 
+}
+
+@media (min-width: 861px) and (max-width: 860px) {
   .nav-item.register-btn {
     color: blue;
     padding: 0.625 rem 0.625rem;
     font-size: 0.875rem;
   }
+
+  .unlock-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .unlock-content img,
+  .unlock-text {
+    max-width: 100%;
+  }
+
+  .learn-btn {
+    margin-bottom: 1.5rem;
+  }
+
+  .achievements-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counts {
+    margin-top: 2rem; 
+  }
+
+  .count-row {
+    flex-direction: column; 
+    margin-right: 0; 
+  }
+
+  .count-item {
+    width: 100%; 
+    margin-bottom: 1.5rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 833px) {
   .hamburger {
     display: block;
   }
 
   .nav-menu {
-    display: none; /* Hide the nav-menu by default on small screens */
+    display: none;
     position: fixed;
     top: 70px;
     left: 0;
@@ -245,7 +323,7 @@ li {
   }
 
   .nav-menu.active {
-    display: flex; /* Show the nav-menu when active */
+    display: flex; 
   }
 
   .nav-item {
@@ -290,6 +368,25 @@ li {
 
   .unlock-content img,
   .unlock-text {
-    max-width: 100%; /* Make both image and text span the full width */
+    max-width: 100%; 
+  }
+
+  .achievements-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .counts {
+    margin-top: 2rem;
+  }
+
+  .count-row {
+    flex-direction: column;
+  }
+
+  .count-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }

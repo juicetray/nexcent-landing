@@ -266,7 +266,7 @@ li {
   margin-left: 0.5rem; 
 }
 
-@media (min-width: 861px) and (max-width: 860px) {
+@media (min-width: 861px) and (max-width: 1200px) {
   .nav-item.register-btn {
     color: blue;
     padding: 0.625 rem 0.625rem;

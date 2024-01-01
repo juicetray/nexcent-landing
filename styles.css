@@ -21,6 +21,7 @@ li {
   background-color: #fff;
   margin-top: 0.5rem;
   padding: 1rem 1rem; 
+}
 
 .nav-menu {
   display: flex;
@@ -32,6 +33,7 @@ li {
 .nav-branding {
   font-size: 1.5rem;
   margin-right: 15px; 
+}
 
 .nav-link {
   transition: 0.7s ease;

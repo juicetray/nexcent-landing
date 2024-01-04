@@ -338,11 +338,11 @@ li {
 }
 
 .meet-customers-link ion-icon {
-  margin-left: 5px; /* Adjust the margin as needed */
+  margin-left: 5px;
 }
 
 .meet-customers-link:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 @media (min-width: 861px) and (max-width: 1200px) {
@@ -415,6 +415,7 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1.25rem;
   }
 
   .hero-text,
@@ -424,16 +425,16 @@ li {
   }
 
   .hero-image {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   .hero-heading {
-    padding-top: 2rem;
-    font-size: 2rem;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .hero-btn {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
 
   .community-items {
@@ -445,10 +446,18 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0;
+  }
+
+  .unlock-content,
+  .pana,
+  .customers {
+    padding: 2rem 1rem;
   }
 
   .unlock-content img,
-  .unlock-text {
+  .unlock-text,
+  .pana-text {
     max-width: 100%;
   }
 
@@ -458,16 +467,64 @@ li {
     justify-content: center;
   }
 
+  .achievements-text {
+    margin: 0;
+  }
+
   .counts {
     margin-top: 2rem;
   }
 
   .count-row {
-    flex-direction: column;
+    align-items: center;
   }
 
   .count-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-bottom: 1.5rem;
+  }
+
+  .count-number {
+    margin-top: 0.5rem;
+  }
+
+  .count-label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .count-item img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .pana,
+  .customers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pana-content,
+  .customer-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .pana-content img,
+  .customer-img {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .client-logos {
+    margin-top: 1rem;
   }
 }

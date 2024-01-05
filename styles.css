@@ -34,7 +34,7 @@ li {
   margin-left: auto;
 }
 
-.nav-branding {
+.nav-branding, .footer-branding {
   font-size: 1.5rem;
   margin-right: 15px;
 }
@@ -52,7 +52,7 @@ li {
   cursor: pointer;
 }
 
-.nav-logo {
+.nav-logo, .footer-logo {
   font-size: 1.5rem;
   margin-left: 7rem;
 }
@@ -80,7 +80,7 @@ li {
 
 .hero,
 .achievements,
-.customers {
+.customers, .demo {
   background-color: #f5f7fa;
 }
 
@@ -104,7 +104,7 @@ li {
 }
 
 .hero-heading,
-.achievements-heading {
+.achievements-heading, .demo-heading {
   color: #4d4d4d;
   padding-top: 4.125rem;
   font-weight: 600;
@@ -160,8 +160,7 @@ li {
   margin: 1.9rem 0rem 0.3rem;
 }
 
-.community-items,
-.user-items {
+.community-items {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -220,7 +219,7 @@ li {
   margin-top: 2rem;
 }
 
-.learn-btn a {
+.learn-btn a, .demo-btn a {
   background-color: #4caf4f;
   color: white;
   padding: 10px 20px;
@@ -308,16 +307,12 @@ li {
   flex: 1;
   max-width: 45.5rem;
   max-height: 20.25rem;
+  color: #4caf4f;
+  font-weight: bold;
 }
 
 .customer-subtext {
   color: grey;
-  margin-bottom: 1rem;
-}
-
-.customer-info {
-  color: #4caf4f;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -330,10 +325,15 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
-.meet-customers-link {
+.customer-logo {
+  width: 3.125rem;
+  height: auto; 
+}
+
+.meet-customers-link, .users-link {
   text-decoration: none;
   color: #4caf4f;
   font-weight: bold;
@@ -348,57 +348,131 @@ li {
 .meet-customers-link:hover {
   text-decoration: underline;
 }
+.users {
+  margin-top: 3rem;
+}
+
+.users-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.users-text {
+  text-align: center;
+  color: #4D4D4D;
+  font-weight: bold;
+}
+
+.users-subtext {
+  max-width: 39.25rem;
+  color: grey;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
+
+.user-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 .user-item {
+  flex: 1 0 23rem;
+  max-width: 23rem; 
+  height: 22.875rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 18.688rem;
-  border-radius: 0.625rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin: 1rem 3rem;
 }
-@media (min-width: 861px) and (max-width: 1200px) {
+
+.user-item img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.user-item-subhead,
+.user-item-text {
+  padding: 15px;
+  text-align: center;
+}
+
+.users-text img {
+  margin: 1.9rem 0rem 0.3rem;
+}
+
+.users-link {
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo {
+  text-align: center;
+}
+
+.demo-heading {
+  color: #263238;
+  margin-bottom: 0.5rem;
+}
+
+.demo-btn {
+  margin-bottom: 1rem;
+
+}
+
+.demo-link {
+  background-color: #4caf4f;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.demo-link ion-icon {
+  margin-left: 5px;
+}
+
+.demo-link:hover {
+  background-color: #45a049; 
+}
+
+.footer {
+  background-color: #263238;
+}
+
+.footer-branding {
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 834px) and (max-width: 1028px) {
   .nav-item.register-btn {
     color: blue;
-    padding: 0.625 rem 0.625rem;
+    padding: 0.625rem 0.625rem;
     font-size: 0.875rem;
   }
 
-  .unlock-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  .client-logos {
+    margin-top: 0.5rem;
   }
 
-  .unlock-content img,
-  .unlock-text {
-    max-width: 100%;
+  .meet-customers-link ion-icon {
+    margin-left: 0;
   }
 
-  .learn-btn {
-    margin-bottom: 1.5rem;
-  }
-
-  .achievements-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .counts {
-    margin-top: 2rem;
-  }
-
-  .count-row {
-    flex-direction: column;
-    margin-right: 0;
-  }
-
-  .count-item {
-    width: 100%;
-    margin-bottom: 1.5rem;
+  .meet-customers-link ion-icon {
+    margin-right: 25rem; 
   }
 }
 
@@ -541,5 +615,15 @@ li {
 
   .client-logos {
     margin-top: 1rem;
+  }
+
+  .user-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-item {
+    flex: 1 0 100%; 
+    max-width: none;
   }
 }

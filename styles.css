@@ -34,7 +34,7 @@ li {
   margin-left: auto;
 }
 
-.nav-branding, .footer-branding {
+.nav-branding {
   font-size: 1.5rem;
   margin-right: 15px;
 }
@@ -421,14 +421,13 @@ li {
   text-align: center;
 }
 
-.demo-heading {
-  color: #263238;
-  margin-bottom: 0.5rem;
+.demo-content {
+  padding: 2rem 0rem 2rem 0rem;
 }
 
-.demo-btn {
-  margin-bottom: 1rem;
-
+.demo-heading {
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 .demo-link {
@@ -447,12 +446,87 @@ li {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #263238;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 .footer-branding {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.copyright-text {
+  color: #F5F7FA;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+.social-logos {
+  margin: 2rem 0 0 7rem;
+  gap: 3rem;
+}
+
+.social-logo {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #3c464c; 
+  border-radius: 50%; 
+  padding: 0.5rem; 
+}
+
+.right-footer-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-section {
+  text-align: left;
+  margin-right: 7rem;
+  margin-left: 0;
+}
+
+.footer-heading {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #F5F7FA;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4caf4f;
+}
+
+.subscribe-input {
+  width: 15.938rem;
+  border: none;
+  border-radius: .5rem; /* Adjust the radius as needed */
+  padding: 10px;
+  background-color: #3c464c;
+  color: white;
+  margin-top: 0.3rem; /* Adjust the top margin to vertically align */
 }
 
 @media (min-width: 834px) and (max-width: 1028px) {

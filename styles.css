@@ -377,16 +377,16 @@ li {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 1rem;
 }
 
 .user-item {
-  flex: 1 0 23rem;
+  flex: 1 0 auto;
   max-width: 23rem; 
-  height: 22.875rem;
   border-radius: 0.625rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin: 1rem;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,9 +394,8 @@ li {
 }
 
 .user-item img {
-  width: 100%;
-  height: auto; 
-  object-fit: cover; 
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -416,6 +415,7 @@ li {
   align-items: center;
   justify-content: center;
 }
+
 
 .demo {
   text-align: center;
@@ -522,20 +522,83 @@ li {
 .subscribe-input {
   width: 15.938rem;
   border: none;
-  border-radius: .5rem; /* Adjust the radius as needed */
+  border-radius: .5rem; 
   padding: 10px;
   background-color: #3c464c;
   color: white;
-  margin-top: 0.3rem; /* Adjust the top margin to vertically align */
+  margin-top: 0.3rem; 
 }
 
-@media (min-width: 834px) and (max-width: 1028px) {
-  .nav-item.register-btn {
-    color: blue;
-    padding: 0.625rem 0.625rem;
-    font-size: 0.875rem;
-  }
 
+  @media (min-width: 600px) and (max-width: 1023px) {
+
+
+    .nav-item.register-btn {
+      color: blue;
+      padding: 0.625rem 0.625rem;
+      font-size: 0.875rem;
+    }
+
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.25rem;
+    }
+  
+    .hero-text,
+    .hero-image {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .hero-image {
+      margin-top: 1rem;
+    }
+  
+    .hero-heading {
+      padding-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+  
+    .hero-btn {
+      padding-top: 1rem;
+    }
+  
+    .community-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .unlock-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .unlock-content,
+    .pana,
+    .customers {
+      padding: 2rem 1rem;
+    }
+  
+    .unlock-content img,
+    .unlock-text,
+    .pana-text {
+      max-width: 100%;
+    }
+
+    .user-items {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .user-item {
+      flex: 1 0 100%; 
+      margin-top: 1rem;
+      max-width: 50%;
+    }
 
   .client-logos {
     margin-top: 0.5rem;
@@ -547,6 +610,37 @@ li {
 
   .meet-customers-link ion-icon {
     margin-right: 25rem; 
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-branding {
+    margin-top: 1rem;
+  }
+  
+  .footer-section {
+    margin: 1rem 2rem 0rem 0rem;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+  }
+  
+  .footer-links li {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  .footer-links a {
+    font-size: 1rem;
+  }
+  
+  .subscribe-input {
+    width: 100%;
+    margin-top: 0.3rem;
   }
 }
 
@@ -698,6 +792,51 @@ li {
 
   .user-item {
     flex: 1 0 100%; 
-    max-width: none;
+    margin-top: 1rem;
+    max-width: 50%;
   }
+
+  .demo-content {
+    padding: 1rem;
+  }
+  
+  .demo-heading {
+    margin-bottom: 1.5rem;
+  }
+  
+  .demo-link {
+    padding: 10px 15px;
+  }
+  
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-branding {
+    margin-top: 1rem;
+  }
+  
+  .footer-section {
+    margin: 1rem 2rem 0rem 0rem;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+  }
+  
+  .footer-links li {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  .footer-links a {
+    font-size: 1rem;
+  }
+  
+  .subscribe-input {
+    width: 100%;
+    margin-top: 0.3rem;
+  }
+  
 }
